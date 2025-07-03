@@ -50,7 +50,7 @@ pipeline {
           stage('Run') {
             steps {
                 echo 'Hello World'
-                sh 'docker compose up -d'
+                sh 'docker compose down && docker compose up -d'
             }
         }
     }
