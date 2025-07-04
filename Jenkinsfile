@@ -39,7 +39,7 @@ pipeline {
                
                 sh 'docker tag notes-app:latest rajannagpal99/notes-app:latest'
                 sh 'docker push rajannagpal99/notes-app:latest'
-                sh 'docker image push successfully'
+                echo 'Docker image push successfully'
             }
         }
           stage('Test') {
